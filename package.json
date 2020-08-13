@@ -1,0 +1,23 @@
+{
+  "name": "actions-auto-release",
+  "version": "1.0.0",
+  "description": "Automatically create a release on master push",
+  "main": "index.js",
+  "scripts": {
+    "build": "dir-archiver --src ./src/  --dest ./release.zip",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkyGuardian42/actions-auto-release.git"
+  },
+  "author": "Malte Janßen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SkyGuardian42/actions-auto-release/issues"
+  },
+  "homepage": "https://github.com/SkyGuardian42/actions-auto-release#readme",
+  "dependencies": {
+    "dir-archiver": "^1.1.2"
+  }
+}
