@@ -1,1 +1,3 @@
-console.log("hi")
+'use strict';
+console.log("hi");
+let x = 12;
