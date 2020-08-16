@@ -53,7 +53,7 @@ jobs:
       - name: Sync with wp-cli
         uses: garygrossgarten/github-action-ssh@v0.5.0
         with:
-          command: wp plugin list
+          command: source ./bashrc && wp plugin list
           host: ${{ secrets.HOST }}
           port: ${{ secrets.PORT }}
           username: ${{ secrets.USER }}
