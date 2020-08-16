@@ -6,8 +6,10 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    tags: 
-      - "v*"
+    # tags: 
+    #   - "v*"
+    branches:
+      - master
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -46,7 +48,7 @@ jobs:
   #           *.zip
   deploy:
     runs-on: ubuntu-latest
-    needs: [create-release]
+    # needs: [create-release]
     steps:
       - name: Sync with wp-cli
         uses: garygrossgarten/github-action-ssh@v0.5.0
